@@ -30,3 +30,16 @@ document.getElementById('nxtQues').addEventListener('click', function () {
 	document.getElementById('wrong').style.display = "none";
 	questionSeries();
 });
+
+//Help button: 
+document.getElementById('help').addEventListener('click', function(){
+	//Displaying the text on button click and then hidding if the button is clicked again 
+	var id = document.getElementById('hel').style.display;
+	
+	if (id == "block") {
+		document.getElementById('hel').style.display = "none";
+	}else{
+		document.getElementById('hel').style.display = "block";
+	}
+
+});
