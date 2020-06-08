@@ -4,7 +4,7 @@ var playingScore =0;//score of the player
 //answers array
 var answers = ["q1optC", "q2optD", "q3optB", "q4optB"]
 
-
+start();
 
 function questionSeries() {
 	//printing the question series 
@@ -63,3 +63,33 @@ document.getElementById('help').addEventListener('click', function(){
 	}
 
 });
+
+//restarting the game when restart button is clicked
+document.getElementById('restart').addEventListener('click', start);
+
+//starting the quiz from beginning
+function start() {
+	
+	//set the default values
+	number =1;
+	playingScore =0; 
+	document.getElementById('ques1').style.display = "none";
+	document.getElementById('ques2').style.display= "none";
+	document.getElementById('ques3').style.display = "none";
+	document.getElementById('score').style.display = "none";
+	document.getElementById('correct').style.display = "none";
+	document.getElementById('wrong').style.display = "none";
+	for(var i=1; i<5; i++){
+		document.getElementById('q' + (i) + 'optA').checked = "false";
+		document.getElementById('q' + (i) + 'optB').checked = "false";
+		document.getElementById('q' + (i) + 'optC').checked = "false";
+		document.getElementById('q' + (i) + 'optD').checked = "false";	
+	}
+	
+	for(var i =1; i<5; i++){
+		document.getElementById('b' + i).style["background-color"]= "white";	
+	}
+	
+	//Display first question
+	questionSeries();
+}
