@@ -1,0 +1,78 @@
+body {
+	background-color: lightblue;
+}
+.header {
+	margin: 30px;
+	margin-bottom: 10px;
+	font-size: 2em;
+	font-weight: bold;
+
+}
+.bars{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	margin: 30px;
+}
+.bars>div{
+	 border: 1px solid black;
+                background-color: white;
+                margin-right: 5px;
+                padding: 5px;
+                border-radius: 4px;
+                height: 2px;
+}
+
+.buttons {
+	margin: 30px;
+}
+.help{
+	margin: 10px;
+	font-weight: bold;
+}
+#correct {
+	margin: 50px;
+	font-size: 2em;
+	font-weight: bold;
+	display: none;
+}
+#wrong {
+	margin: 50px;
+	font-size: 2em;
+	font-weight: bold;
+	display: none;
+}
+#rules{
+	font-size: 2em
+}
+#hel {
+	display: none;
+}
+#score{
+	margin: 30px;
+	font-size: 2em;
+	font-weight: bold;
+	display: none;
+}
+#ques1{
+	margin: 30px;
+	font-size: 1.25em;
+	display: none;
+
+}
+#ques2{
+	margin: 30px;
+	font-size: 1.25em;
+	display: none;
+}
+#ques3{
+	margin: 30px;
+	font-size: 1.25em;
+	display: none;
+}
+#ques4{
+	margin: 30px;
+	font-size: 1.25em;
+	display: none;
+}
+

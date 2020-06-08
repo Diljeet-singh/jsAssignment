@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment 1</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body >
+
+	<header class="header">Quiz</header>
+
+	<div class = "bars" id = "bar">
+		 <div id="b1">&nbsp;</div>
+		 <div id="b2">&nbsp;</div>
+		 <div id="b3">&nbsp;</div>
+		 <div id="b4">&nbsp;</div>
+
+	</div>
+	<form>
+	<div class = "question1" id="ques1">
+		<fieldset>
+			<legend >
+				<b>Which is you favourite browser?</b> <br> 
+			</legend>
+			<input type="radio" id="q1optA" value = "a" name="opt">
+			<label for = "q1optA">Internet Explorer</label><br>
+			<input type="radio" id="q1optB" value = "b" name="opt">
+			<label for="q1optB">Safari</label><br>
+			<input type="radio" id="q1optC"  value = "c"name="opt">
+			<label for="q1optC">Google Chrome</label><br>
+			<input type="radio" id="q1optD" value = "d"  name="opt">
+			<label for="q1optD">Opera Mini</label><br><br>
+		</fieldset>
+	</div>
+	<div class="question2" id="ques2">
+		<fieldset>
+			<legend>
+				<b>What is the captial of Canada ?</b> <br> 
+			</legend>
+			<input type="radio" id="q2optA" name = "opt">
+			<label for="q2optA"> Toronto</label><br>
+			<input type="radio" id="q2optB"  name = "opt">
+			<label for="q2optB">Oakville</label><br>
+			<input type="radio" id="q2optC"  name = "opt">
+			<label for="q2optC"> Montreal</label><br>
+			<input type="radio" id="q2optD" name = "opt">
+			<label for="q2optD"> Ottawa</label><br><br>
+		</fieldset>
+	</div>
+
+	<div class="question3" id="ques3">
+		<fieldset>
+			<legend>
+				<b>Which is the most populus country in the world? </b><br> 
+				</legend>
+			<input type="radio" id="q3optA" name="opt">
+			<label for="q3optA"> India</label><br>
+			<input type="radio" id="q3optB" name="opt">
+			<label for="q3optB">China</label><br>
+			<input type="radio" id="q3optC"  name="opt">
+			<label for="q3optC">USA</label><br>
+			<input type="radio" id="q3optD"  name="opt">
+			<label for="q3optD">Brazil</label><br><br>
+		</fieldset>
+	</div>
+	<div class="question4" id="ques4">
+		<fieldset>
+			<legend>
+				<b>Who is the current prime minister of Canada ?</b> <br> 
+			</legend>
+			<input type="radio" id ="q4optA" name="opt">
+			<label for="q4optA">Donald Trumph</label><br>
+			<input type="radio" id ="q4optB" name="opt">
+			<label for="q4optB">Justin Trudeu</label><br>
+			<input type="radio" id ="q4optC" name="opt">
+			<label for="q4optC">Stephan Harper</label><br>
+			<input type="radio" id="q4optD" name="opt">
+			<label for="q4optD">Paul Martin</label><br><br>
+		</fieldset>
+	</div>
+	</form>
+
+	<div class="correct" id="correct">
+		Your answer is correct!!
+	</div>
+	<div class="wrong" id="wrong">
+		Your answer is wrong! Better luck next time.
+	</div>
+	<div class="score" id="score">
+		Your Final score =&nbsp;<span class="sc"> 3 </span>
+	</div>
+
+	<div class="buttons">
+		<button class="btn1" id="submit">Submit Answer</button> &nbsp;
+		<button class="bt2" id="nxtQues">Next Question</button><br><br>
+
+		<button class="btn3" id="help"> Help</button>
+		<button class="btn4" id="restart">Restart</button>
+	</div>
+	
+	<div class="help" id="help">
+		<p id = "hel"><span id="rules"><b>Rules:</b></span> <br> <br>
+		Answer the questions and there will be 1 point for each correct answer.<br>
+		First you submit the answer than you move to the next question otherwise the 
+		you get no points.<br>
+		After all the questions are answered the final score will be displayed.</p>
+	</div>
+
+
+</body>
+<script type="text/javascript" src="js/main.js"></script>
+</html>
