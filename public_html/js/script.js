@@ -31,9 +31,29 @@ document.getElementById('nxtQues').addEventListener('click', function () {
 	questionSeries();
 });
 
+//Submit button 
+document.getElementById('submit').addEventListener('click', function (){
+	//1.hidding the question
+	document.getElementById('ques' + number).style["display"] = "none";
+
+	//2.checking the answer and displaying the text whether answer is wrong or right.
+	if (document.getElementById(answers[number -1]).checked) {
+
+		playingScore ++;
+		document.getElementById('b' + number).style["background-color"]= "green";
+		
+		document.getElementById('correct').style["display"] = "block";
+	}else{
+		document.getElementById('wrong').style.display = "block";
+		document.getElementById('b' + number).style["background-color"]= "red";
+	}
+	
+});
+
 //Help button: 
 document.getElementById('help').addEventListener('click', function(){
-	//Displaying the text on button click and then hidding if the button is clicked again 
+	//Displaying the text on button click and then hidding if the button 
+        //is clicked again 
 	var id = document.getElementById('hel').style.display;
 	
 	if (id == "block") {
