@@ -2,7 +2,7 @@ var number = 1; //question number
 var playingScore = 0;//score of the player
 
 //answers array
-var answers = ["q1optC", "q2optD", "q3optB", "q4optB"]
+var answers = ["q1optC", "q2optD", "q3optB", "q4optB"];
 
 start();
 
