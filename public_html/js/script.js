@@ -79,6 +79,7 @@ function start() {
     document.getElementById('score').style.display = "none";
     document.getElementById('correct').style.display = "none";
     document.getElementById('wrong').style.display = "none";
+    document.getElementById('hel').style.display = "none";
     for (var i = 1; i < 5; i++) {
         document.getElementById('q' + (i) + 'optA').checked = "false";
         document.getElementById('q' + (i) + 'optB').checked = "false";
